@@ -1,0 +1,145 @@
+body {
+    background-color: rgba(64, 224, 208, 0.377);
+    font-family: Arial, sans-serif;
+}
+  
+.dynamic-resume,
+#resume-output {
+  background-color: white;
+  box-shadow: 0 0 5px rgba(105, 102, 102, 0.822);
+  border-radius: 12px;
+  width: 40%;
+  margin: auto;
+  padding: 28px;
+}
+
+h1,
+h2 {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+input {
+  height: 28px;
+  width: 80%;
+  outline: none;
+  border: solid 1px gray;
+  color: rgb(36, 36, 36);
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+input:hover {
+  background-color: rgb(247, 244, 244);
+}
+
+input:focus {
+  background-color: rgb(247, 244, 244);
+}
+
+input::placeholder {
+  color: rgb(160, 160, 160);
+  padding-left: 3px;
+}
+
+button {
+  background-color:  rgb(15, 121, 192);
+  color: white;
+  height: 40px;
+  width: 140px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 50px;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.30s;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button:active {
+  opacity: 0.6;
+}
+
+#resume-output {
+  background-color: white;
+  box-shadow: 0 0 5px rgba(105, 102, 102, 0.822);
+  border-radius: 12px;
+  width: 40%;
+  margin: 20px auto;
+  padding: 28px;
+}
+
+#shareable-link-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#shareable-link-container h2,
+#shareable-link-container p,
+#shareable-link-container a {
+  display: block;
+  margin: 0 auto;
+  line-height: 29px;
+}
+
+#download-pdf {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 765px) {
+  .dynamic-resume,
+  #resume-output{
+    width: 50%;
+    padding: 18px;
+  }
+  h1 {
+    font-size: 27px;
+  }
+  h2 {
+    font-size: 21px;
+  }
+  label {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 665px) {
+  .dynamic-resume,
+  #resume-output{
+    width: 65%;
+    padding: 18px;
+  }
+  h1 {
+    font-size: 22px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  input,
+  textarea {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 627px) {
+  .dynamic-resume,
+  #resume-output{
+    width: 70%;
+    padding: 18px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 16px;
+  }
+  label {
+    font-size: 12px;
+  }
+} 
+

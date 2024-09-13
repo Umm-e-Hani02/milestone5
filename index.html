@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umm-e-Hani's Shareable Resume</title>
+</head>
+<body>
+    <div class="dynamic-resume">
+        <h1>Milestone 5: Unique Path and Shareable Link</h1>
+        <form id="resume-form">
+            <h2>Personal Information</h2>
+            <label for="username">Username:
+                <input type="text" id="username" placeholder="Enter your username" required><br><br>
+            </label>
+            <label for="name">Name:
+                <input type="text" id="name" placeholder="Enter your name" required><br><br>
+            </label>
+            <label for="email">Email:
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </label>
+            <h2>Education</h2>
+            <label for="degree">Degree:
+                <input type="text" id="degree" placeholder="Enter your Degree" required><br><br>
+            </label>
+            <label for="institution">Institution:
+                <input type="text" id="institution" placeholder="Enter your School or University" required><br><br>
+            </label>
+            <label for="graduation-year">Graduation Year:
+                <input type="date" id="graduationYear" placeholder="Enter your Graduation year"><br>
+            </label>
+            <h2>Skills</h2>
+            <label>Skills:
+                <textarea id="skills" placeholder="Enter your Skills" required></textarea>
+            </label>
+            <h2>Work Experience</h2>
+            <label>Work Experience:
+                <textarea id="workExperience" placeholder="Enter your Work Experience" required></textarea>
+            </label>
+            <button type="submit" id="generate-resume">Generate Resume</button>
+        </form>
+    </div>
+    <div id="resume-output"></div><br>
+    <div id="shareable-link-container" style="display: none;">
+        <h2>Shareable Link</h2>
+        <p>Here is your link to view or edit your resume:</p>
+        <a href="#" id="shareable-link" target="_blank"></a><br>
+        <button id="download-pdf">Download as PDF</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
+
